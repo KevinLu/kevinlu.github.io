@@ -1,5 +1,5 @@
 .hero-social {
-  margin-top: 5em;
+  margin-top: 10vh;
 }
 
 .masthead {
@@ -13,5 +13,9 @@
 
 .text-center {
   text-align: center !important;
+}
+
+.icon-text {
+  font-size: 125%;
 }
 /*# sourceMappingURL=main.css.map */

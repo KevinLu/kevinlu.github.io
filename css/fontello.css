@@ -58,24 +58,23 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+/* 'GitHub Logo' */
 .icon-github-circled:before {
   content: '\f09b';
 }
 
-/* '' */
+/* 'LinkedIn Logo' */
 .icon-linkedin:before {
   content: '\f0e1';
 }
 
-/* '' */
+/* 'PDF Logo' */
 .icon-file-pdf:before {
   content: '\f1c1';
 }
 
-/* '' */
-
 /* Rule for standalone icon */
-i[class^="icon-"]:before,
+/* i[class^="icon-"]:before,
 i[class*=" icon-"]:before {
   margin: 0;
-}
+} */
