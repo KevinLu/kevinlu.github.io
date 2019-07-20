@@ -11,6 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
@@ -22,20 +23,25 @@
             <h2>Student, Developer</h2>
             <!-- Social icons and links -->
             <div class="row hero-social">
-                <div class="col-4">
+                <div class="col-3 d-block">
                     <a class="text-decoration-none text-secondary" href="https://github.com/KevinLu"><i
                             class="icon-github"></i></a>
                     <a class="ico-text text-decoration-none text-dark" href="https://github.com/KevinLu">GitHub</a>
                 </div>
-                <div class="col-4">
+                <div class="col-3 d-block">
                     <a class="text-decoration-none text-secondary" href="https://github.com/KevinLu"><i
                             class="icon-linkedin"></i></a>
                     <a class="ico-text text-decoration-none text-dark" href="https://github.com/KevinLu">LinkedIn</a>
                 </div>
-                <div class="col-4">
+                <div class="col-3 d-block">
                     <a class="text-decoration-none text-secondary" href="https://github.com/KevinLu"><i
                             class="icon-file-pdf"></i></a>
                     <a class="ico-text text-decoration-none text-dark" href="https://github.com/KevinLu">Resume</a>
+                </div>
+                <div class="col-3 d-block">
+                    <a class="text-decoration-none text-secondary" href="mailto:q48lu@edu.uwaterloo.ca"><i
+                            class="icon-envelope"></i></a>
+                    <a class="ico-text text-decoration-none text-dark" href="mailto:q48lu@edu.uwaterloo.ca">Email</a>
                 </div>
             </div>
             <!-- Scroll down button -->
@@ -43,7 +49,7 @@
         </div>
     </header>
     <!-- Portfolio Section -->
-    <div class="text-center" id="projects">
+    <div class="container text-center" id="projects">
         <h1 class="jumbotron-heading">Projects</h1>
         <p class="lead text-muted">I mainly work on web and mobile related stuff. Main focus right now is on Android app
             development.</p>
@@ -63,9 +69,15 @@
                             <h5 class="card-title">AirQuality</h5>
                             <p class="card-text">Android app for displaying the latest air quality information from
                                 places around the world. 500+ installs on Google Play.</p>
-                            <a href="https://github.com/KevinLu/AirQuality" type="button" class="mt-auto btn btn-sm btn-outline-secondary">
-                                View on
+                            <a href="https://github.com/KevinLu/AirQuality" type="button"
+                                class="mt-auto btn btn-sm btn-outline-secondary">
+                                GitHub
                                 <i class="icon-s-github"></i>
+                            </a>
+                            <a href="https://github.com/KevinLu/FraserHacks-Website" type="button"
+                                class="mt-auto btn btn-sm btn-outline-secondary">
+                                Play Store
+                                <i class="icon-s-googleplay"></i>
                             </a>
                             <div class="d-flex pt-3">
                                 <small class="text-muted">Java, Android</small>
@@ -82,11 +94,17 @@
                             data-holder-rendered="true">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">FraserHacks 2019</h5>
-                            <p class="card-text">Website for the FraserHacks 2019 hackathon: a 10 hour hackathon
+                            <p class="card-text">Website for FraserHacks 2019 hackathon: a 10 hour hackathon
                                 in Mississauga hosted by high school students.</p>
-                            <a href="https://github.com/KevinLu/FraserHacks-Website" type="button" class="mt-auto btn btn-sm btn-outline-secondary">
-                                View on
+                            <a href="https://github.com/KevinLu/FraserHacks-Website" type="button"
+                                class="mt-auto btn btn-sm btn-outline-secondary">
+                                GitHub
                                 <i class="icon-s-github"></i>
+                            </a>
+                            <a href="https://github.com/KevinLu/FraserHacks-Website" type="button"
+                                class="mt-auto btn btn-sm btn-outline-secondary">
+                                Live website
+                                <i class="icon-s-earth"></i>
                             </a>
                             <div class="d-flex pt-3">
                                 <small class="text-muted">HTML, SCSS, JavaScript</small>
@@ -103,13 +121,14 @@
                             data-holder-rendered="true">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Colorspot</h5>
-                            <p class="card-text">A simple point & click game to test the user's ability to differentiate
+                            <p class="card-text">A simple point &amp; click game to test the user's ability to
+                                differentiate
                                 different shades of the same color.</p>
-                            <a href="https://github.com/KevinLu/colorspot" type="button" class="mt-auto btn btn-sm btn-outline-secondary">
-                                View on
+                            <a href="https://github.com/KevinLu/colorspot" type="button"
+                                class="mt-auto btn btn-sm btn-outline-secondary">
+                                GitHub
                                 <i class="icon-s-github"></i>
                             </a>
-                            </button>
                             <div class="d-flex pt-3">
                                 <small class="text-muted">Processing</small>
                             </div>
@@ -127,6 +146,21 @@
         </div>
 
     </footer>
+    <script type="text/javascript">
+        var $root = $('html, body');
+
+        $('a[href^="#"]').click(function () {
+            var href = $.attr(this, 'href');
+
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+
+            return false;
+        });
+    </script>
     <script type="text/javascript">
         window.onload = function () {
             var lastModified = document.lastModified.substring(0, 10);

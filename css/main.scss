@@ -26,7 +26,7 @@
 
 .scroll-down {
 	position: absolute;
-	left: 50%;
+	left: 49%;
 	bottom: 20vh;
 	display: block;
 	z-index: 100;
@@ -37,9 +37,8 @@
 	border-bottom: 2px solid #000;
 	border-right: 2px solid #000;
 	z-index: 9;
-	left: 50%;
 	transform: translate(-50%, 0%) rotate(45deg);
-	animation: fade_move_down 3s ease infinite;
+	animation: fade_move_down 4s ease infinite;
 }
 
 
@@ -89,5 +88,11 @@
 	100% {
 		transform: translate(0, 10px) rotate(45deg);
 		opacity: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.ico-text {
+		font-size: 3vw;
 	}
 }

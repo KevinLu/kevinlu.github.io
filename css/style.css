@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icomoon.eot?alywgw');
-  src: url('/fonts/icomoon.eot?alywgw#iefix') format('embedded-opentype'),
-    url('/fonts/icomoon.ttf?alywgw') format('truetype'),
-    url('/fonts/icomoon.woff?alywgw') format('woff'),
-    url('/fonts/icomoon.svg?alywgw#icomoon') format('svg');
+  src: url('/fonts/icomoon.eot?fye71z');
+  src: url('/fonts/icomoon.eot?fye71z#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?fye71z') format('truetype'),
+    url('/fonts/icomoon.woff?fye71z') format('woff'),
+    url('/fonts/icomoon.svg?fye71z#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,6 +17,8 @@
   font-weight: normal;
   font-size: 200%;
   speak: none;
+
+  padding: 0 !important;
 
   display: inline;
   text-decoration: inherit;
@@ -85,16 +87,12 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-css3:before {
+.icon-googleplay:before {
   content: "\e900";
 }
 
-.icon-html5:before {
-  content: "\e901";
-}
-
-.icon-java:before {
-  content: "\e903";
+.icon-s-googleplay:before {
+  content: "\e900";
 }
 
 .icon-envelope:before {
@@ -117,6 +115,15 @@
   content: "\e907";
 }
 
-.icon-android:before {
-  content: "\eac0";
+.icon-s-earth:before {
+  content: "\e9ca";
+}
+
+@media (max-width: 768px) {
+
+  [class^="icon-"],
+  [class*=" icon-"] {
+    font-size: 150%;
+    margin: 0;
+  }
 }
