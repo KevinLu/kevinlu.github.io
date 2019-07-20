@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?alywgw');
+  src: url('/fonts/icomoon.eot?alywgw#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?alywgw') format('truetype'),
+    url('/fonts/icomoon.woff?alywgw') format('woff'),
+    url('/fonts/icomoon.svg?alywgw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 200%;
+  speak: none;
+
+  display: inline;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /* margin-left: .2em; */
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+[class^="icon-s-"],
+[class*="icon-s-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  speak: none;
+
+  display: inline;
+  text-decoration: inherit;
+  width: 1em;
+  /* margin-right: .2em; */
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-css3:before {
+  content: "\e900";
+}
+
+.icon-html5:before {
+  content: "\e901";
+}
+
+.icon-java:before {
+  content: "\e903";
+}
+
+.icon-envelope:before {
+  content: "\e904";
+}
+
+.icon-file-pdf:before {
+  content: "\e905";
+}
+
+.icon-linkedin:before {
+  content: "\e906";
+}
+
+.icon-github:before {
+  content: "\e907";
+}
+
+.icon-s-github:before {
+  content: "\e907";
+}
+
+.icon-android:before {
+  content: "\eac0";
+}

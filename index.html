@@ -7,15 +7,15 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Single Section for name, social -->
-    <header class="masthead d-flex">
+    <header class="masthead d-flex" id="home">
         <div class="container text-center my-auto">
             <!-- Name, description, social -->
             <h1 class="display-1">Kevin Lu</h1>
@@ -23,20 +23,116 @@
             <!-- Social icons and links -->
             <div class="row hero-social">
                 <div class="col-4">
-                    <a class="text-decoration-none" href="https://github.com/KevinLu"><i class="icon-github-circled"></i></a>
-                    <a class="icon-text text-decoration-none" href="https://github.com/KevinLu">GitHub</a>
+                    <a class="text-decoration-none text-secondary" href="https://github.com/KevinLu"><i
+                            class="icon-github"></i></a>
+                    <a class="ico-text text-decoration-none text-dark" href="https://github.com/KevinLu">GitHub</a>
                 </div>
                 <div class="col-4">
-                    <a class="text-decoration-none" href="https://github.com/KevinLu"><i class="icon-linkedin"></i></a>
-                    <a class="icon-text text-decoration-none" href="https://github.com/KevinLu">LinkedIn</a>
+                    <a class="text-decoration-none text-secondary" href="https://github.com/KevinLu"><i
+                            class="icon-linkedin"></i></a>
+                    <a class="ico-text text-decoration-none text-dark" href="https://github.com/KevinLu">LinkedIn</a>
                 </div>
                 <div class="col-4">
-                    <a class="text-decoration-none" href="https://github.com/KevinLu"><i class="icon-file-pdf"></i></a>
-                    <a class="icon-text text-decoration-none" href="https://github.com/KevinLu">Resume</a>
+                    <a class="text-decoration-none text-secondary" href="https://github.com/KevinLu"><i
+                            class="icon-file-pdf"></i></a>
+                    <a class="ico-text text-decoration-none text-dark" href="https://github.com/KevinLu">Resume</a>
+                </div>
+            </div>
+            <!-- Scroll down button -->
+            <a href="#projects" class="scroll-down"></a>
+        </div>
+    </header>
+    <!-- Portfolio Section -->
+    <div class="text-center" id="projects">
+        <h1 class="jumbotron-heading">Projects</h1>
+        <p class="lead text-muted">I mainly work on web and mobile related stuff. Main focus right now is on Android app
+            development.</p>
+    </div>
+    <!-- Portfolio Album -->
+    <div class="album py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pb-4">
+                    <div class="card h-100 mb-4 shadow-sm">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16c0c689ceb%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16c0c689ceb%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.45000076293945%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            data-holder-rendered="true">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">AirQuality</h5>
+                            <p class="card-text">Android app for displaying the latest air quality information from
+                                places around the world. 500+ installs on Google Play.</p>
+                            <a href="https://github.com/KevinLu/AirQuality" type="button" class="mt-auto btn btn-sm btn-outline-secondary">
+                                View on
+                                <i class="icon-s-github"></i>
+                            </a>
+                            <div class="d-flex pt-3">
+                                <small class="text-muted">Java, Android</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="card h-100 mb-4 shadow-sm">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16c0c689cee%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16c0c689cee%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.45000076293945%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            data-holder-rendered="true">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">FraserHacks 2019</h5>
+                            <p class="card-text">Website for the FraserHacks 2019 hackathon: a 10 hour hackathon
+                                in Mississauga hosted by high school students.</p>
+                            <a href="https://github.com/KevinLu/FraserHacks-Website" type="button" class="mt-auto btn btn-sm btn-outline-secondary">
+                                View on
+                                <i class="icon-s-github"></i>
+                            </a>
+                            <div class="d-flex pt-3">
+                                <small class="text-muted">HTML, SCSS, JavaScript</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="card h-100 mb-4 shadow-sm">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16c0c689cf0%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16c0c689cf0%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.45000076293945%22%20y%3D%22120.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            data-holder-rendered="true">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Colorspot</h5>
+                            <p class="card-text">A simple point & click game to test the user's ability to differentiate
+                                different shades of the same color.</p>
+                            <a href="https://github.com/KevinLu/colorspot" type="button" class="mt-auto btn btn-sm btn-outline-secondary">
+                                View on
+                                <i class="icon-s-github"></i>
+                            </a>
+                            </button>
+                            <div class="d-flex pt-3">
+                                <small class="text-muted">Processing</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- Footer -->
+    <footer>
+
+        <div class="text-center py-3">
+            <p id="footer-last-modified"></p>
+        </div>
+
+    </footer>
+    <script type="text/javascript">
+        window.onload = function () {
+            var lastModified = document.lastModified.substring(0, 10);
+            document.getElementById('footer-last-modified').innerHTML = "Page modified " + lastModified;
+        };
+    </script>
 </body>
 
 </html>
