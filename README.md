@@ -1,5 +1,5 @@
 # kevinlu.github.io
-kevinlu.github.io - Personal Website
+www.kevinlu.github.io - Personal Website
 
 This repository contains the source code and files for my personal website.
 
