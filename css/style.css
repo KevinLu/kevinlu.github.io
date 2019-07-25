@@ -49,8 +49,8 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-[class^="icon-s-"],
-[class*="icon-s-"] {
+[class^="ico-s-"],
+[class*="ico-s-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   font-style: normal;
@@ -91,7 +91,7 @@
   content: "\e900";
 }
 
-.icon-s-googleplay:before {
+.ico-s-googleplay:before {
   content: "\e900";
 }
 
@@ -111,11 +111,11 @@
   content: "\e907";
 }
 
-.icon-s-github:before {
+.ico-s-github:before {
   content: "\e907";
 }
 
-.icon-s-earth:before {
+.ico-s-earth:before {
   content: "\e9ca";
 }
 
@@ -123,7 +123,7 @@
 
   [class^="icon-"],
   [class*=" icon-"] {
-    font-size: 275%;
+    font-size: 200%;
     margin: 0;
   }
 }
