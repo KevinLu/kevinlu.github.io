@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script async defer src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">AirQuality</h5>
                             <p class="card-text">Android app for displaying the latest air quality information from
-                                places around the world. 500+ installs on Google Play.</p>
+                                places around the world. 1000+ installs on Google Play.</p>
                             <div class="d-flex align-items-center">
                                 <div class="btn-group">
                                     <a href="https://play.google.com/store/apps/details?id=com.kevinlu.airquality"
@@ -141,7 +141,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-4">
                     <div class="card h-100 mb-4 shadow-sm">
-                        <img class="card-img-top img-fluid lazy" data-src="img/Bingo_Still.png"
+                        <img class="card-img-top img-fluid" src="img/Bingo_Still.png"
                             alt="Bingo App Screenshot">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Bingo</h5>
@@ -164,11 +164,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-4">
                     <div class="card h-100 mb-4 shadow-sm">
-                        <img class="card-img-top img-fluid lazy" data-src="img/WishWellness_Still.png"
+                        <img class="card-img-top img-fluid" src="img/WishWellness_Still.png"
                             alt="Wish Wellness Website Screenshot">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Wish Wellness</h5>
-                            <p class="card-text">Keep track of medications and mental well-being. See the positivity in
+                            <p class="card-text">Keep track of medications and mental well-being. See the positivity
+                                in
                                 your day and avoid stress. Made at StarterHacks 2019.</p>
                             <div class="d-flex align-items-center">
                                 <div class="btn-group">
@@ -192,11 +193,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-4">
                     <div class="card h-100 mb-4 shadow-sm">
-                        <img class="card-img-top img-fluid lazy" data-src="img/TeamUp_Still.png"
+                        <img class="card-img-top img-fluid" src="img/TeamUp_Still.png"
                             alt="TeamUp Discord Bot Screenshot">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">TeamUp</h5>
-                            <p class="card-text">Discord bot helps you create groups based on a desired game and time,
+                            <p class="card-text">Discord bot helps you create groups based on a desired game and
+                                time,
                                 get a
                                 private message when it's time to play! Submitted to Discord Hack Week 2019.</p>
                             <div class="d-flex align-items-center">
@@ -242,36 +244,6 @@
             });
 
             return false;
-        });
-        //Lazyloading Images
-        document.addEventListener("DOMContentLoaded", function () {
-            var lazyloadImages = document.querySelectorAll("img.lazy");
-            var lazyloadThrottleTimeout;
-
-            function lazyload() {
-                if (lazyloadThrottleTimeout) {
-                    clearTimeout(lazyloadThrottleTimeout);
-                }
-
-                lazyloadThrottleTimeout = setTimeout(function () {
-                    var scrollTop = window.pageYOffset;
-                    lazyloadImages.forEach(function (img) {
-                        if (img.offsetTop < (window.innerHeight + scrollTop)) {
-                            img.src = img.dataset.src;
-                            img.classList.remove('lazy');
-                        }
-                    });
-                    if (lazyloadImages.length == 0) {
-                        document.removeEventListener("scroll", lazyload);
-                        window.removeEventListener("resize", lazyload);
-                        window.removeEventListener("orientationChange", lazyload);
-                    }
-                }, 20);
-            }
-
-            document.addEventListener("scroll", lazyload);
-            window.addEventListener("resize", lazyload);
-            window.addEventListener("orientationChange", lazyload);
         });
         //Cards Hover Add Shadow
         $(document).ready(function () {
