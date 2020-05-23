@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
-    <script async defer src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="favicon" type="image/png" href="/favicon.ico"/>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <div class="container text-center my-auto">
             <!-- Name, description, social -->
             <h1 class="display-1">Kevin Lu</h1>
-            <h2>Student, Developer</h2>
+            <h2>Student / Developer</h2>
             <!-- Social icons and links -->
             <div class="row hero-social">
                 <div class="col-sm-3 pb-3 d-block">
@@ -30,11 +30,11 @@
                     <a class="ico-text text-decoration-none text-dark" href="https://github.com/KevinLu">GitHub</a>
                 </div>
                 <div class="col-sm-3 pb-3 d-block">
-                    <a class="text-decoration-none text-secondary"
-                        href="https://www.linkedin.com/in/kevin-lu-660412139/"><i class="icon-linkedin"></i></a>
+                    <a class="text-decoration-none text-secondary" href="https://www.linkedin.com/in/k-lu/"><i
+                            class="icon-linkedin"></i></a>
                     <br>
                     <a class="ico-text text-decoration-none text-dark"
-                        href="https://www.linkedin.com/in/kevin-lu-660412139/">LinkedIn</a>
+                        href="https://www.linkedin.com/in/k-lu/">LinkedIn</a>
                 </div>
                 <div class="col-sm-3 pb-3 d-block">
                     <a class="text-decoration-none text-secondary" href="/KevinLu_Resume.pdf"><i
@@ -43,14 +43,41 @@
                     <a class="ico-text text-decoration-none text-dark" href="/KevinLu_Resume.pdf">Resume</a>
                 </div>
                 <div class="col-sm-3 pb-3 d-block">
-                    <a class="text-decoration-none text-secondary" href="mailto:q48lu@edu.uwaterloo.ca"><i
+                    <a class="text-decoration-none text-secondary" href="mailto:q48lu@uwaterloo.ca"><i
                             class="icon-envelope"></i></a>
                     <br>
-                    <a class="ico-text text-decoration-none text-dark" href="mailto:q48lu@edu.uwaterloo.ca">Email</a>
+                    <a class="ico-text text-decoration-none text-dark" href="mailto:q48lu@uwaterloo.ca">Email</a>
                 </div>
             </div>
         </div>
     </header>
+    <!-- About Section -->
+    <div class="container text-center py-5" id="about">
+        <h1 class="jumbotron-heading">About</h1>
+        <p class="lead text-muted">Who am I?</p>
+    </div>
+    <div class="container">
+        <div class="row va-sidebyside">
+            <div class="col-xs-6 col-md-4 col-lg-2">
+                <img class="card-img-top img-fluid picture" src="img/KevinLu.jfif" alt="Kevin Lu Picture">
+            </div>
+            <div class="col-xs-6 col-md-8 col-lg-10">
+                <h5>
+                    I'm a second year
+                    <a href="https://uwaterloo.ca/future-students/programs/computing-and-financial-management">computing
+                        and financial management</a>
+                    student at the
+                    <a href="https://uwaterloo.ca/">University of Waterloo</a>.
+                </h5>
+                <h5>
+                    In my free time, I do music production and graphic design.
+                </h5>
+                <h5>
+                    Feel free to check out my projects below or <a href="mailto:q48lu@uwaterloo.ca">contact me here</a>.
+                </h5>
+            </div>
+        </div>
+    </div>
     <!-- Portfolio Section -->
     <div class="container text-center py-5" id="projects">
         <h1 class="jumbotron-heading">Projects</h1>
@@ -141,8 +168,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-4">
                     <div class="card h-100 mb-4 shadow-sm">
-                        <img class="card-img-top img-fluid" src="img/Bingo_Still.png"
-                            alt="Bingo App Screenshot">
+                        <img class="card-img-top img-fluid" src="img/Bingo_Still.png" alt="Bingo App Screenshot">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Bingo</h5>
                             <p class="card-text">Randomly generated Bingo cards with options to convert to various
@@ -231,31 +257,6 @@
         </div>
     </footer>
     <script type="text/javascript">
-        //jQuery Smooth Scrolling
-        var $root = $('html, body');
-
-        $('a[href^="#"]').click(function () {
-            var href = $.attr(this, 'href');
-
-            $root.animate({
-                scrollTop: $(href).offset().top
-            }, 500, function () {
-                window.location.hash = href;
-            });
-
-            return false;
-        });
-        //Cards Hover Add Shadow
-        $(document).ready(function () {
-            $(".card").hover(
-                function () {
-                    $(this).addClass('shadow-lg');
-                },
-                function () {
-                    $(this).removeClass('shadow-lg');
-                }
-            );
-        });
         //Footer Last Modified Date
         window.onload = function () {
             var lastModified = document.lastModified.substring(0, 10);
